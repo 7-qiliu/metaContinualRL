@@ -1,3 +1,5 @@
+### This code base is no longer maintained and exists as a historical artifact to supplement our SDSC8006 Rinforcement Learning course project. For more recent work, please see [metaContinualRL](https://github.com/ffeng1996/metaContinualRL).
+
 # Reconciling Meta Learning and Regularization in Lifelong Reinforcement Learning with Non-stationary Environments
 
 This is the implementation of the following course project report: 
