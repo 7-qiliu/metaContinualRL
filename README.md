@@ -1,34 +1,44 @@
-# metaContinualRL
+# Reconciling Meta Learning and Regularization in Lifelong Reinforcement Learning with Non-stationary Environments
 
-## Code setup
-### Requirement
-python == 2.7 or above  
-tensorflow == 1.15.0  
-gym == 0.16.0  
-ple  
+This is the implementation of the following course project report: 
+[Reconciling Meta Learning and Regularization in Lifelong Reinforcement Learning with Non-stationary Environments](https://github.com/ffeng1996/metaContinualRL/blob/master/paper/paper.pdf).
 
-To config ple environment, follow this [guide](https://github.com/ntasfi/PyGame-Learning-Environment):
+![](figs/figure.png)
+
+## Requirements
+The current version of the code has been tested with following libs:
+* `tensorflow 1.15.0`
+* `gym 0.16.0`
+* `tqdm`
+* `visdom`
+* `Pillow`
+* `ple`
+
+Install the required the packages inside the virtual environment:
 ```
-git clone https://github.com/ntasfi/PyGame-Learning-Environment.git
-cd PyGame-Learning-Environment/
-pip install -e .
+$ conda create -n yourenvname python=3.7 anaconda
+$ source activate yourenvname
+$ pip install -r requirements.txt
+$ git clone https://github.com/ntasfi/PyGame-Learning-Environment.git
+$ cd PyGame-Learning-Environment/
+$ pip install -e .
 ```
+
+
 ### How to run the code
 #### Download the code
 ```
 git clone https://github.com/ffeng1996/metaContinualRL
 ```
-#### Run the code
-For paper 'Learning to Learn without Forgetting by Maximizing Transfer and Minimizing Interference (MER)' with Reinforcement Learning version:
-```buildoutcfg
-python MER.py
+#### Quickly hands-on
+Run following scripts to reproduce baselines:
 ```
-For paper 'Continual Reinforcement Learning with Complex Synapses':
-```buildoutcfg
-python Complex_Synapses.py
+bash baseline.sh
 ```
+## Issue / Want to Contribute ? 
+Open a new issue or do a pull request in case you are facing any difficulty with the code base or if you want to contribute.
 
-## Papers
+## Related Works
 [Learning to Learn without Forgetting by Maximizing Transfer and Minimizing Interference (MER)](https://arxiv.org/pdf/1810.11910.pdf) [[code for supervision]](https://github.com/mattriemer/mer)
 
 [Deep Online Learning via Meta-learning: Continual Adaptation for Model-based RL](https://arxiv.org/pdf/1812.07671.pdf)
